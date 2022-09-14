@@ -126,7 +126,9 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 12px;
 }
+
 
 .about-section, .skills-section {
     display: flex;
@@ -252,6 +254,10 @@ a:active {
 #contact-form {
     padding: 10px;
     margin: 20px 0;
+}
+
+.contact-form .button-border {
+    margin-top: 15px;
 }
 
 .standard-label {
