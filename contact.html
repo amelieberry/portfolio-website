@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
         <header class="page-header">
@@ -62,7 +62,9 @@
                     <label class="standard-label" for="contact-message">Message: 
                         <textarea id="contact-message" maxlength="240" class="contact-form__input" required></textarea>
                     </label>
-                    <input type="submit" value="Send Message" class="button button__secondary">
+                    <div class="button-border button-border__secondary">
+                        <input type="submit" value="Send Message" class="button-inner">
+                    </div>
                 </form>
             </section>
         </main>
