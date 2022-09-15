@@ -1,7 +1,3 @@
-html {
-    min-height: 100vh;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -13,6 +9,10 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 1.3;
+}
+
+main {
+    min-height: calc(100vh - 190px)
 }
 
 h1 {
@@ -98,6 +98,7 @@ a:active {
 .profile {
     max-width: 700px;
     margin: 20px auto;
+    min-height: 55vh;
 }
 
 .centered-heading {
@@ -109,13 +110,15 @@ a:active {
     width: 250px;
     margin: 0 40px 0 0;
     border-radius: 50%;
-    box-shadow: 0.5px 3px 9px 2px #543864;
+    box-shadow: 0.5px 1px 9px 2px #543864;
 }
 
 .profile__info {
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .about-section, .skills-section {
@@ -125,6 +128,17 @@ a:active {
     align-items: center;
     text-align: center;
     gap: 8px;
+}
+
+.about-section__content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .skills-section {
@@ -145,96 +159,57 @@ a:active {
     text-align: center;
 }
 
-button {
-    background: none;
+.button-border {
     display: inline-block;
-    font-family: inherit;
-    color: #2b2b2b;
-    text-decoration: none;
-    padding: 10px;
     transition: 0.2s;
-    width: 160px;
-    max-width: 160px;
-}
-
-.button {
-    background: none;
-    display: inline-block;
-    font-family: inherit;
-    color: #2b2b2b;
-    text-decoration: none;
-    padding: 10px;
-    transition: 0.2s;
-    width: 160px;
-    max-width: 160px;
-}
-
-button:hover,
-button:focus,
-.button:hover, 
-.button:focus {
     cursor: pointer;
-}
-
-.button__primary {
-    margin-bottom: 10px;
-    border: 3px solid #402c5f;
-    border-radius: 10px;
-    box-shadow: 0 3px 3px #543864;
-}
-
-.button__primary:hover {
-    background: #c5bfcf;
-    transition: 0.7s;
-}
-
-.button__primary:focus {
-    background: #c5bfcf;
-    transition: 0.7s;
-}
-
-.button__primary:active {
-    box-shadow: 0 2px;
-    transform: translateY(3px);
-    transition: 0.4s;
-}
-
-.button__secondary {
-    margin-top: 12px;
-    border-image: linear-gradient(to right, #402c5f, #fa9b1d);
-    border-image-slice: 1;
+    border-radius: 5px;
+    font-family: inherit;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    height: 40px;
+    width: 160px;
+    padding: 3px;
     box-shadow: 3px 3px 4px #333;
-}
-
-.button__secondary:hover {
-    border: none;
-    border-image-slice: 1;
-    background-image: linear-gradient(to top right, #402c5f, #fa9b1d);
+  }
+  
+  .button-border__primary {
+    background: linear-gradient(to right, #402c5f, #fa9b1d);
+  }
+  
+  .button-border__secondary {
+    background: linear-gradient(to left, #402c5f, #fa9b1d);
+  }
+  
+  .button-inner {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #eee;
+    border-radius: 3px;
+  }
+  
+  .button-border:hover .button-inner {
+    cursor: pointer;
+    background: transparent;
     color: #fff;
-    transition: 0.6s;
-}
-
-.button__secondary:focus {
-    border: none;
-    border-image-slice: 1;
-    background-image: linear-gradient(to top right, #402c5f, #fa9b1d);
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .button-border:focus .button-inner {
+    cursor: pointer;
+    background: transparent;
     color: #fff;
-    transition: 0.6s;
-}
-
-.button__secondary:active {
-    border: none;
-    border-image-slice: 1;
-    background-image: linear-gradient(to top right, #402c5f, #fa9b1d);
-    color: #fff;
-    transition: 0.6s;
-}
-
-.button__secondary:active {
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .button-border:active {
     transform: translate(2px, 2px);
     box-shadow: none;
     transition: 0.2s;
-}
+  }
 
 .grid__item {
     display: inline-block;
@@ -290,6 +265,10 @@ button:focus,
     margin: 20px 0;
 }
 
+.contact-form .button-border {
+    margin-top: 15px;
+}
+
 .standard-label {
     display: block;
     padding: 0;
@@ -328,17 +307,18 @@ button:focus,
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 88px;
 }
 
 @keyframes color-change {
     0% {
-        fill: #edc655;
+        fill: undefined;
     }
     50% {
-        fill: #fcffad;
+        fill: undefined;
     }
     100% {
-        fill: #f76414;
+        fill: undefined;
     }
 }
 
@@ -405,6 +385,12 @@ button:focus,
     .project-list {
         grid-template-columns: 1fr;
     }
+    .about-section__content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media all and (min-width: 620px) and (max-width: 750px) {
@@ -428,7 +414,7 @@ button:focus,
         align-items: center;
     }   
     .profile__portrait {
-        margin: 0 0 20px 0;
+        margin: 20px 0;
     }
     .profile__info {
         align-items: center;
