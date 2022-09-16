@@ -198,7 +198,7 @@ a:active {
     background: var(--background-color);
     border-radius: 3px;
   }
-  
+
   .button-border:hover .button-inner, 
   .button-border:focus .button-inner {
     cursor: pointer;
