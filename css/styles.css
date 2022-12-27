@@ -2,10 +2,10 @@
 Colors used
 */
 :root {
-  --background-color: #eee;
-  --primary-text-color: #2b2b2b;
+  --background-color: #f5f2f9;
+  --primary-text-color: #1f1122;
   --secondary-text-color: #fff;
-  --heading-color: #333;
+  --heading-color: #1f1122;
   --primary-color: #402c5f;
   --secondary-color: #fa9b1d;
   --dark-purple: #392e53;
@@ -223,18 +223,24 @@ a:active {
   transition: 0.2s;
 }
 
+.profile-work {
+  height: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
 .grid__item {
   display: inline-block;
   width: 33%;
 }
 
-@supports (display: grid) {
+@supports (display: flex) {
   .project-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
     margin: 0;
     padding-top: 20px;
+    justify-content: center;
   }
 
   .project-list__item {
@@ -243,8 +249,9 @@ a:active {
     max-width: 300px;
     width: auto;
     min-height: auto;
-    margin: 0;
-    border-radius: 7px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
@@ -416,12 +423,6 @@ a:active {
   }
 }
 
-@media all and (min-width: 620px) and (max-width: 750px) {
-  .project-list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media all and (max-width: 750px) {
   .project-list {
     grid-gap: 10px;
@@ -431,7 +432,7 @@ a:active {
     font-size: 22px;
   }
 
-  .profile {
+  .profile .profile-work {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
