@@ -1,81 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Web developer in Berlin. Contact details.">
-        <title>Contact</title>
-        <link rel="shortcut icon" href="img/favicon-32x32.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    </head>
-    <body>
-        <header class="page-header">
-            <img src="img/logo.png" class="page-header__item" alt="A logo spelling my full name">
-            <nav class="page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="profile">
-            <section>
-                <h1 class="centered-heading">Contact</h1>
-                <div class="contact-details">
-                    <div class="contact-details__item">
-                        <img src="img/skype_icon.svg" alt="A Skype icon" height="40" width="40">
-                        <a href="skype:amelie.berry">amelie.berry</a>
-                    </div>
-                    <div class="contact-details__item">
-                        <img src="img/email_icon.svg" alt="An email icon" height="40" width="40">
-                        <a href="mailto:aac.berry@gmail.com">Gmail: aac.berry</a>
-                    </div>
-                    <div class="contact-details__item">
-                        <img src="img/linkedin_icon.svg" alt="A LinkedIn Icon" height="40" width="40">
-                        <a href="https://www.linkedin.com/in/amelie-berry" target="_blank">amelie-berry</a>
-                    </div>
-                </div>
-            </section>
-            <section class="contact-form">
-                <h2>Leave me a message</h2>
-                <form action="#" method="post" id="contact-form">
-                    <label class="standard-label" for="contact-email">Email: 
-                        <input type="email" id="contact-email" class="contact-form__input" required>
-                    </label> 
-                    <label class="standard-label" for="contact-phone">Phone: 
-                        <input type="tel" id="contact-phone" class="contact-form__input">
-                    </label>
-                    <label class="standard-label" for="contact-message">Message: 
-                        <textarea id="contact-message" maxlength="240" class="contact-form__input" required></textarea>
-                    </label>
-                    <div class="button-border button-border__secondary">
-                        <input type="submit" value="Send Message" class="button-inner">
-                    </div>
-                </form>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://github.com/amelieberry" target="_blank"><img src="img/social_github_icon.svg" width="30" height="30" alt="Github"></a>
-                <a href="https://codepen.io/amelieberry" target="_blank"><img src="img/codepen_icon.svg" width="30" height="30" alt="CodePen"></a>
-                <a href="https://www.linkedin.com/in/amelie-berry" target="_blank"><img src="img/linkedin_icon.svg" width="30" height="30" alt="LinkedIn"></a>
-            </div>
-        </footer>
-        <script src="js/tota11y.min.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web developer in Berlin. Contact details."
+    />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/logo.png"
+        class="page-header__item"
+        alt="A logo spelling my full name"
+      />
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="profile">
+        <svg
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          width="300"
+          height="300"
+          viewBox="0 0 168.84259 168.84259"
+          version="1.1"
+          id="svgcontact1"
+          inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+          sodipodi:docname="contact.svg"
+        >
+          <defs id="defs2">
+            <filter
+              inkscape:collect="always"
+              style="color-interpolation-filters: sRGB"
+              id="filter899"
+              x="-1.1090668e-05"
+              width="1.0000222"
+              y="-1.0524179e-05"
+              height="1.000021"
+            >
+              <feGaussianBlur
+                inkscape:collect="always"
+                stdDeviation="0.0007403718"
+                id="feGaussianBlur901"
+              />
+            </filter>
+          </defs>
+          <sodipodi:namedview
+            id="base"
+            pagecolor="#ffffff"
+            bordercolor="#666666"
+            borderopacity="1.0"
+            inkscape:pageopacity="0.0"
+            inkscape:pageshadow="2"
+            inkscape:zoom="0.7"
+            inkscape:cx="566.32567"
+            inkscape:cy="295.8742"
+            inkscape:document-units="mm"
+            inkscape:current-layer="layer1"
+            inkscape:document-rotation="0"
+            showgrid="false"
+            fit-margin-top="0"
+            fit-margin-left="0"
+            fit-margin-right="0"
+            fit-margin-bottom="0"
+            inkscape:window-width="1920"
+            inkscape:window-height="1001"
+            inkscape:window-x="1911"
+            inkscape:window-y="-9"
+            inkscape:window-maximized="1"
+            units="px"
+          />
+          <metadata id="metadata5"></metadata>
+          <g
+            inkscape:label="Layer 1"
+            inkscape:groupmode="layer"
+            id="layer1"
+            transform="translate(-24.890682,-64.078706)"
+          >
+            <path
+              id="path847"
+              style="
+                fill: #be3455;
+                fill-opacity: 1;
+                stroke-width: 0.329869;
+                filter: url(#filter899);
+              "
+              d="m 155.67881,64.080594 c -8.29657,0.02207 -16.68989,3.3205 -23.02237,9.201504 -1.93903,1.800789 -4.98449,5.737376 -6.45335,8.341612 -2.19467,3.436175 -2.61549,6.470808 -3.53415,9.854178 -0.7666,3.243723 -0.74271,9.751742 0.0481,13.154232 0.31624,1.36071 0.64348,2.7748 0.72709,3.14244 0.13623,0.599 -1.45247,1.34794 -15.28848,7.20886 -13.713499,5.80907 -15.477844,6.47841 -15.775743,5.9862 -18.53755,-25.449811 -59.804699,-22.014146 -63.175472,16.33441 0,5.24094 1.186132,10.30228 3.486091,14.87764 2.638769,5.24934 6.212578,9.43935 10.780737,12.63902 3.492912,3.41975 6.826845,3.07858 8.131804,4.14393 8.157549,2.97714 17.431496,2.54119 25.391216,-1.19321 1.700739,-0.79791 3.834407,-1.9841 4.741828,-2.63601 1.354539,-0.97314 1.720784,-1.10615 2.045353,-0.74362 0.21743,0.24287 2.647881,2.91568 5.40122,5.93969 2.753331,3.02401 5.005896,5.7102 5.005896,5.96914 0,0.25894 -0.311523,0.75287 -0.692463,1.09761 -1.175519,1.06383 -4.177389,5.8197 -5.220872,8.27184 -2.141267,5.03194 -3.185099,11.18409 -2.716627,16.01091 l 0.247012,2.54145 c -0.32679,2.84404 1.286883,6.08123 2.372466,8.19795 4.16973,10.19832 14.077184,18.03076 25.307984,20.00756 10.86441,1.91231 22.0776,-1.8256 29.9222,-9.97407 6.32248,-6.5674 9.35151,-14.14798 9.31571,-23.31433 -0.0217,-5.56693 -0.98531,-10.07046 -3.02565,-14.14488 -2.14666,-6.00466 -3.06478,-5.40851 -5.78156,-8.60102 -2.09889,-2.32452 -5.61418,-5.07777 -8.68733,-6.80424 l -2.00711,-1.12758 6.80269,-18.87016 c 3.74152,-10.37855 6.87605,-18.94301 6.96495,-19.03191 0.0889,-0.0889 0.75112,-0.0221 1.47174,0.14831 7.05379,1.66825 15.10308,0.75007 21.7904,-2.48616 9.13684,-4.42164 15.65911,-12.3685 18.11569,-22.07152 4.93797,-19.503975 -8.02723,-38.760831 -28.10319,-41.740597 -1.51606,-0.225021 -3.04937,-0.333267 -4.58577,-0.329179 z m -0.13436,22.625491 c 2.38321,-0.02543 4.07596,0.582835 5.70301,2.049489 4.57913,4.12772 3.49934,11.347486 -2.07429,13.870466 -2.17787,0.98583 -5.01012,0.91974 -7.19284,-0.16795 -7.77239,-3.873146 -5.10561,-15.659543 3.56412,-15.752005 z m 0,22.424465 c 7.14743,-0.0167 9.63015,0.83431 13.08086,4.48293 1.78158,1.88376 2.78619,3.56755 3.34863,5.61258 0.31328,1.13908 0.27131,1.2881 -0.54054,1.92701 -1.52099,1.19701 -6.08779,3.23779 -8.79429,3.93 -3.06091,0.78284 -8.09717,1.08134 -10.88823,0.64492 -5.11761,-0.80021 -12.37044,-4.13238 -12.36978,-5.68286 5.3e-4,-1.15534 1.7949,-4.65169 3.16673,-6.17016 1.62243,-1.79583 3.4517,-3.02586 5.90455,-3.9703 1.75491,-0.67571 2.55854,-0.76352 7.09207,-0.77412 z m -29.83125,4.86792 c 0.22243,-0.008 0.33242,0.0487 0.40514,0.14263 0.23484,0.30346 1.05135,1.51084 1.81436,2.68304 1.99866,3.07048 5.92231,6.90264 9.417,9.19737 1.66625,1.09412 3.33522,2.08647 3.70881,2.20504 0.46625,0.14801 0.61258,0.38739 0.46613,0.76325 -0.11733,0.30111 -3.18147,8.78591 -6.80889,18.85518 -3.62742,10.06929 -6.69653,18.40951 -6.82026,18.53376 -0.12374,0.12424 -1.11543,0.006 -2.204,-0.262 -2.75398,-0.67856 -10.20602,-0.6926 -13.20643,-0.0248 -3.81482,0.849 -7.8925,2.48615 -10.90836,4.37957 -1.56254,0.981 -2.890192,1.78387 -2.950192,1.78387 -0.06,0 -2.572534,-2.68981 -5.583633,-5.97741 l -5.474602,-5.97741 0.839743,-1.0325 c 3.255629,-4.00155 5.936522,-9.17002 7.122562,-13.73198 1.078849,-4.14962 1.244351,-10.6921 0.375171,-14.84457 -0.360781,-1.72357 -0.709213,-3.33455 -0.774113,-3.58014 -0.08176,-0.30924 4.597506,-2.45629 15.220744,-6.98407 11.32007,-4.82476 14.39692,-6.09211 15.36082,-6.12882 z m -63.006457,12.07679 c 4.597847,-0.0426 8.366011,3.47617 8.383984,8.42739 0.01299,3.58032 -2.197939,6.66358 -5.705078,7.95662 -4.09811,1.51092 -9.311627,-1.2095 -10.594186,-5.52835 -0.645671,-2.17428 -0.644906,-2.71513 0.0088,-4.94233 0.65323,-2.22561 3.209025,-4.88973 5.285467,-5.50974 0.889813,-0.26569 1.769576,-0.3957 2.621029,-0.40359 z m -0.241329,22.44255 c 2.389883,-0.0191 4.828437,0.0949 6.059577,0.35243 4.901229,1.02544 9.533586,5.49634 10.617957,10.24744 0.181059,0.79333 0.01288,0.99976 -1.681036,2.05931 -2.601169,1.62704 -6.055376,3.00878 -9.071795,3.62872 -3.133571,0.64399 -8.235992,0.6324 -11.311972,-0.0253 -4.1511,-0.88761 -10.422114,-3.91941 -10.659813,-5.1537 -0.197202,-1.02399 1.824564,-4.79478 3.548102,-6.61716 1.859269,-1.96591 4.194577,-3.369 6.732407,-4.04472 1.035355,-0.27566 3.376689,-0.42792 5.766573,-0.447 z m 56.751536,39.51594 c 0.48377,0.005 0.97695,0.05 1.47537,0.13591 6.66875,1.14884 9.13384,9.74866 4.09845,14.29783 -0.72406,0.65415 -1.7827,1.38385 -2.35231,1.62109 -2.38325,0.99266 -6.03656,0.75242 -7.69668,-0.50591 -2.77468,-2.10313 -4.05486,-4.39477 -4.04885,-7.24659 0.0106,-4.77345 3.84763,-8.35456 8.52402,-8.30233 z m -6.39082,22.65133 h 6.26783 6.26732 l 2.21795,1.05058 c 3.05485,1.44714 5.28908,3.62473 6.67557,6.50658 1.75401,3.64578 1.76549,3.50727 -0.40101,4.81986 -2.48532,1.50574 -5.34609,2.72988 -7.99745,3.42253 -1.17928,0.30807 -3.77706,0.62399 -5.77277,0.70228 -5.41018,0.21233 -9.26703,-0.6678 -14.0193,-3.19929 -3.7109,-1.97676 -3.72407,-1.99389 -2.98587,-3.93671 1.51176,-3.97864 3.87207,-6.582 7.54476,-8.32197 z"
+              sodipodi:nodetypes="ssccsssccsccssssssscccsssccsccssssssssssscsssssssscssssssssccsscccsscssssssssssscssssssssssscscsccccssscsscc"
+            />
+          </g>
+        </svg>
+      </section>
+      <section class="contact-form">
+        <h2>Leave me a message</h2>
+        <form action="#" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email"
+            >Email:
+            <input
+              type="email"
+              id="contact-email"
+              class="contact-form__input"
+              required
+            />
+          </label>
+          <label class="standard-label" for="contact-phone"
+            >Phone:
+            <input type="tel" id="contact-phone" class="contact-form__input" />
+          </label>
+          <label class="standard-label" for="contact-message"
+            >Message:
+            <textarea
+              id="contact-message"
+              maxlength="240"
+              class="contact-form__input"
+              required
+            ></textarea>
+          </label>
+          <input type="submit" value="Send Message" class="button-inner" />
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/amelieberry" target="_blank"
+          ><img
+            src="img/social_github_icon.svg"
+            width="40"
+            height="40"
+            alt="Github"
+        /></a>
+        <a href="https://codepen.io/amelieberry" target="_blank"
+          ><img src="img/codepen_icon.svg" width="40" height="40" alt="CodePen"
+        /></a>
+        <a href="https://www.linkedin.com/in/amelie-berry" target="_blank"
+          ><img
+            src="img/linkedin_icon.svg"
+            width="40"
+            height="40"
+            alt="LinkedIn"
+        /></a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
