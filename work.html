@@ -1,88 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Remember to edit meta descriptions-->
-        <meta name="description" content="Web developer porfolio projects">
-        <title>Development Projects</title>
-        <link rel="shortcut icon" href="img/favicon-32x32.png">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        
-    </head>
-    <body>
-        <header class="page-header">
-            <img src="img/logo.png" class="page-header__item" alt="A logo spelling my full name">
-            <nav class="page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="profile-work">
-            <h1 id="work" class="centered-heading">Work</h1>
-            <div class="project-list">
-                <div class="project-list__item">
-                    <img src="img/project1-screenshot.JPG" alt="Screenshot of the homepage of my Hyrule Compendium project" width="280px">
-                    <h2>Hyrule Compendium App</h2>
-                    <p>
-                        A Hyrule Compendium listing all interactive items found on the Sheikah Slate in the videogame Legend of Zelda Breath of the Wild.
-                    </p>
-                    <a href="https://github.com/amelieberry/hyrule-compendium-app">Github Repo</a>
-                    <a href="https://amelieberry.github.io/hyrule-compendium-app/">Live App</a>
-                </div>
-                <div class="project-list__item">
-                    <img src="img/project-2-screenshot.JPG" alt="Screenshot of the homepage of my movie-api project" width="280px">
-                    <h2>Movie API</h2>
-                    <p>
-                        The complete server-side of the Track'M application, including the server, business logic, and business layers of the application. It consists of a well-designed REST API and architected database built using JavaScript, Node.js, Express, and MongoDB. 
-                    </p>
-                    <a href="https://github.com/amelieberry/movie-api">Github Repo</a>
-                    <a href="https://trackm.onrender.com/">Live API</a>
-                </div>
-                <div class="project-list__item">
-                    <img src="img/project-3-screenshot.JPG" alt="Screenshot of the homepage of my Track'M project" width="280px">
-                    <h2>Track'M App</h2>
-                    <p>
-                        The client-side of a movie tracking app allowing users to create an account, access information about different movies and save them to their list of favorites. Users can also update their personal information, and delete their account. 
-                    </p>
-                    <a href="https://github.com/amelieberry/trackm-client">Github Repo</a>
-                    <a href="https://trackm-client.netlify.app/">Live App</a>
-                </div>
-                <div class="project-list__item">
-                    <img src="img/project-4-screenshot.JPG" alt="Screenshot of the homepage of my Track'M project" width="280px">
-                    <h2>Meet App</h2>
-                    <p>
-                        A serverless and progressive React application using test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
-                    </p>
-                    <a href="https://github.com/amelieberry/meet">Github Repo</a>
-                    <a href="https://amelieberry.github.io/meet/">Live App</a>
-                </div>
-            </div>
-        </main>
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://github.com/amelieberry" target="_blank"><img src="img/social_github_icon.svg" width="30" height="30" alt="Github"></a>
-                <a href="https://codepen.io/amelieberry" target="_blank"><img src="img/codepen_icon.svg" width="30" height="30" alt="CodePen"></a>
-                <a href="https://www.linkedin.com/in/amelie-berry" target="_blank"><img src="img/linkedin_icon.svg" width="30" height="30" alt="LinkedIn"></a>
-            </div>
-        </footer>
-        <script src="js/tota11y.min.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Remember to edit meta descriptions-->
+    <meta name="description" content="Web developer porfolio projects" />
+    <title>Development Projects</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/logo.png"
+        class="page-header__item"
+        alt="A logo spelling my full name"
+      />
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="profile">
+        <svg
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="300"
+          height="300"
+          viewBox="0 0 132.29167 132.29167"
+          version="1.1"
+          id="svg9"
+        >
+          <defs id="defs2" />
+          <metadata id="metadata5"></metadata>
+          <g id="layer1">
+            <path
+              style="fill: #be3455; fill-opacity: 1; stroke-width: 0.172541"
+              d="m 18.185796,83.87319 c -0.0014,-0.210929 0.785097,-1.079816 2.812306,-3.107025 2.142707,-2.142707 2.790039,-2.863295 2.712926,-3.019925 -0.0557,-0.113147 -0.610946,-0.662381 -1.233844,-1.220551 -1.794637,-1.608026 -2.262725,-3.005971 -1.588684,-4.744591 0.899364,-2.319813 3.3562,-3.501342 5.641212,-2.712939 0.53665,0.185162 0.909703,0.490557 2.01292,1.647848 l 1.354183,1.420567 2.826791,-2.863475 c 1.55474,-1.574907 2.921585,-2.885268 3.037435,-2.911911 0.139083,-0.03198 1.124525,0.865443 2.90067,2.641587 2.586988,2.586988 2.704711,2.685662 3.073579,2.576156 0.296272,-0.08795 0.462703,-0.293915 0.731343,-0.905059 0.686934,-1.562751 2.378316,-2.745357 4.11904,-2.880018 2.503492,-0.193668 5.138728,2.441567 4.94506,4.94506 -0.136191,1.760535 -1.300375,3.425825 -2.879753,4.119306 -0.600963,0.263874 -0.818145,0.437405 -0.902325,0.720967 -0.104844,0.353172 0.03404,0.522357 2.557755,3.115785 2.212292,2.273401 2.657405,2.793311 2.603061,3.040423 -0.03606,0.163947 -1.271698,1.50592 -2.74587,2.982161 -2.151751,2.154721 -2.674163,2.745934 -2.649139,2.997761 0.02413,0.242808 0.265815,0.431205 1.069618,0.833775 1.297278,0.649715 1.965858,1.465465 2.432342,2.967756 0.27532,0.886658 0.276965,1.242493 0.0099,2.136593 -1.279133,4.281851 -6.771102,4.960559 -8.706751,1.075997 -0.741415,-1.487904 -0.627644,-1.536415 -3.772601,1.608542 -2.304431,2.30443 -2.770363,2.71228 -3.096109,2.71017 -0.32559,-0.002 -0.795335,-0.41437 -3.113109,-2.732149 -2.83299,-2.83299 -2.99185,-3.056903 -2.510442,-3.538311 0.122659,-0.122659 0.538669,-0.323564 0.924466,-0.446455 1.164051,-0.370794 2.011515,-1.127312 2.682338,-2.394473 0.493239,-0.931715 0.574951,-1.287503 0.517402,-2.252908 -0.146839,-2.463275 -2.139035,-4.401385 -4.581761,-4.457366 -1.651755,-0.03786 -3.861873,1.538165 -4.473243,3.189838 -0.650138,1.75641 -0.734459,1.723976 -3.994903,-1.536468 C 18.954554,84.932803 18.187187,84.08327 18.18584,83.873171 Z M 0.90603043,65.85401 c 0.05205,-0.114618 1.30654607,-1.448536 2.78776517,-2.96426 l 2.6931265,-2.755862 -0.2210517,-0.4559 C 6.0018274,59.339668 5.7414287,59.125008 5.156206,58.845661 2.8725112,57.755582 2.0120518,55.162113 3.2048299,52.964117 c 0.295522,-0.544575 0.6842147,-1.017936 1.0842324,-1.320408 0.8935717,-0.675673 2.3541048,-1.162036 3.0991622,-1.032034 1.4621194,0.255116 2.8747725,1.297981 3.3696325,2.487568 0.320464,0.77036 0.840313,1.307662 1.232369,1.273749 0.192239,-0.01663 1.285876,-0.991657 3.108,-2.770928 l 2.811389,-2.745274 2.803016,2.681804 c 2.589583,2.477591 2.834191,2.677142 3.21239,2.620587 0.525321,-0.07856 0.876394,-0.435599 1.190471,-1.210709 0.307549,-0.759012 1.329264,-1.789232 2.161521,-2.179496 1.64177,-0.769898 3.388329,-0.429453 4.742127,0.924346 0.925226,0.925226 1.2569,1.609199 1.33921,2.761699 0.116185,1.626786 -1.152043,3.630017 -2.693575,4.254642 -0.865971,0.350888 -1.057714,0.576346 -1.033618,1.215369 0.01945,0.515821 0.148934,0.674323 2.622624,3.210352 l 2.602165,2.667742 -2.407208,2.473605 -2.407208,2.473605 -1.251294,-1.155863 c -1.077061,-0.99491 -1.376004,-1.189163 -2.146871,-1.395018 -1.181284,-0.315455 -2.81013,-0.20773 -3.745787,0.24773 -1.653123,0.804709 -2.969499,2.76326 -3.047888,4.534759 -0.05761,1.301824 0.478366,2.480482 1.776578,3.906869 l 1.084836,1.191948 -2.473236,2.406839 -2.473229,2.406846 -2.779723,-2.714401 -2.779723,-2.714399 0.341263,-0.208921 c 0.187696,-0.114907 0.644416,-0.342142 1.014934,-0.50497 0.89792,-0.394604 2.184614,-1.687334 2.668118,-2.680705 0.898317,-1.845423 0.287584,-4.394475 -1.388469,-5.795142 -2.002842,-1.67376 -4.520377,-1.599022 -6.5448458,0.194298 -0.8226217,0.72869 -1.0391904,1.021895 -1.4124644,1.912239 C 6.6412481,70.960817 6.3840081,71.433647 6.3120831,71.433178 6.2401634,71.432719 4.973075,70.224093 3.4963389,68.747356 1.4605601,66.711576 0.83424743,66.011992 0.90600543,65.853983 Z M 20.742789,45.409621 c 3.199277,-3.199277 3.153337,-3.084197 1.551068,-3.885497 -2.30337,-1.151923 -3.212562,-4.030909 -1.973911,-6.250454 0.919163,-1.647048 3.218512,-2.888504 4.766514,-2.573518 1.609741,0.327549 3.219755,1.641175 3.654157,2.981462 0.138911,0.42859 0.275879,0.596414 0.557773,0.683426 0.356451,0.110023 0.50192,-0.01294 3.160328,-2.671349 l 2.786681,-2.786681 0.433209,0.196779 c 0.238264,0.108227 1.555669,1.319239 2.927566,2.691136 2.949821,2.949821 2.951237,2.950509 3.590324,1.57901 0.48551,-1.041961 1.629506,-2.192754 2.535052,-2.550113 0.882715,-0.348352 2.368214,-0.394805 3.296513,-0.103083 1.040324,0.326926 2.620451,1.872559 2.976186,2.911217 0.512807,1.497268 0.215755,3.201977 -0.789649,4.531618 -0.351804,0.465267 -0.778972,0.784205 -1.629508,1.216806 l -1.15272,0.586255 0.0563,0.50476 c 0.05072,0.454753 0.30801,0.75647 2.596926,3.045386 1.812309,1.812309 2.541171,2.624567 2.542528,2.833443 0.0014,0.210543 -0.770992,1.065711 -2.748832,3.043551 -3.137509,3.13751 -3.082358,3.015777 -1.6864,3.722385 1.555371,0.787301 2.832495,2.70366 2.79052,4.187261 -0.05116,1.808347 -1.662576,3.889169 -3.433845,4.434125 -2.215559,0.681649 -4.388626,-0.258529 -5.505998,-2.382171 -0.764118,-1.452256 -0.608137,-1.517749 -3.664629,1.538743 l -2.670531,2.670534 -2.705443,-2.705443 c -2.185161,-2.185161 -2.685809,-2.750057 -2.60334,-2.937423 0.05616,-0.12759 0.478199,-0.420867 0.937873,-0.651724 2.163042,-1.086334 3.283372,-3.881931 2.503683,-6.247535 -0.244391,-0.74149 -0.470304,-1.068402 -1.33784,-1.935938 -0.926499,-0.926499 -1.157627,-1.077145 -2.056714,-1.340588 -1.209522,-0.354397 -2.048652,-0.313373 -3.362029,0.164371 -1.220452,0.443942 -2.413547,1.551968 -2.879338,2.674039 -0.2527,0.608745 -0.364192,0.743705 -0.575532,0.696674 -0.144162,-0.03209 -1.360928,-1.176294 -2.703918,-2.542695 -1.342984,-1.366403 -2.547872,-2.510056 -2.677527,-2.541451 -0.179828,-0.04355 0.411698,-0.704516 2.494499,-2.787317 z"
+              id="path887"
+            />
+            <path
+              style="fill: #be3455; fill-opacity: 1; stroke-width: 0.172541"
+              d="m 114.29281,84.209689 c 10e-4,-0.210929 -0.7851,-1.079816 -2.81231,-3.107025 -2.1427,-2.142707 -2.79003,-2.863295 -2.71292,-3.019925 0.0557,-0.113147 0.61094,-0.662381 1.23384,-1.220551 1.79464,-1.608026 2.26273,-3.005971 1.58869,-4.744591 -0.89937,-2.319813 -3.3562,-3.501342 -5.64122,-2.712939 -0.53665,0.185162 -0.9097,0.490557 -2.01292,1.647848 l -1.35418,1.420567 -2.82679,-2.863475 c -1.55474,-1.574907 -2.921585,-2.885268 -3.037435,-2.911911 -0.139083,-0.03198 -1.124525,0.865443 -2.90067,2.641587 -2.586988,2.586988 -2.704711,2.685662 -3.073579,2.576156 -0.296272,-0.08795 -0.462703,-0.293915 -0.731343,-0.905059 -0.686934,-1.562751 -2.378316,-2.745357 -4.11904,-2.880018 -2.503492,-0.193668 -5.138728,2.441567 -4.94506,4.94506 0.136191,1.760535 1.300375,3.425825 2.879753,4.119306 0.600963,0.263874 0.818145,0.437405 0.902325,0.720967 0.104844,0.353172 -0.03404,0.522357 -2.557755,3.115785 -2.212292,2.273401 -2.657405,2.793311 -2.603061,3.040423 0.03606,0.163947 1.271698,1.50592 2.74587,2.982161 2.151751,2.154721 2.674163,2.745934 2.649139,2.997761 -0.02413,0.242808 -0.265815,0.431205 -1.069618,0.833775 -1.297278,0.649715 -1.965858,1.465465 -2.432342,2.967756 -0.27532,0.886658 -0.276965,1.242493 -0.0099,2.136593 1.279133,4.28185 6.771102,4.96056 8.706751,1.075997 0.741415,-1.487904 0.627644,-1.536415 3.772601,1.608542 2.304431,2.304431 2.770363,2.712281 3.096109,2.710171 0.32559,-0.002 0.795335,-0.41438 3.113105,-2.73215 2.83299,-2.83299 2.99185,-3.056903 2.51045,-3.538311 -0.12266,-0.122659 -0.53867,-0.323564 -0.92447,-0.446455 -1.16405,-0.370794 -2.011515,-1.127312 -2.682338,-2.394473 -0.493239,-0.931715 -0.574951,-1.287503 -0.517402,-2.252908 0.146839,-2.463275 2.13904,-4.401385 4.58176,-4.457366 1.65176,-0.03786 3.86187,1.538165 4.47324,3.189838 0.65014,1.75641 0.73446,1.723976 3.99491,-1.536468 1.94705,-1.947055 2.71442,-2.796588 2.71577,-3.006687 z m 17.27977,-18.01918 c -0.052,-0.114618 -1.30655,-1.448536 -2.78777,-2.96426 l -2.69313,-2.755862 0.22106,-0.4559 c 0.16404,-0.33832 0.42444,-0.55298 1.00966,-0.832327 2.2837,-1.090079 3.14416,-3.683548 1.95138,-5.881544 -0.29553,-0.544575 -0.68422,-1.017936 -1.08424,-1.320408 -0.89357,-0.675673 -2.3541,-1.162036 -3.09916,-1.032034 -1.46212,0.255116 -2.87477,1.297981 -3.36963,2.487568 -0.32046,0.77036 -0.84031,1.307662 -1.23237,1.273749 -0.19224,-0.01663 -1.28588,-0.991657 -3.108,-2.770928 l -2.81139,-2.745274 -2.80301,2.681804 c -2.58959,2.477591 -2.8342,2.677142 -3.21239,2.620587 -0.52533,-0.07856 -0.8764,-0.435599 -1.19048,-1.210709 -0.30754,-0.759012 -1.32926,-1.789232 -2.16152,-2.179496 -1.64177,-0.769898 -3.38833,-0.429453 -4.74212,0.924346 -0.92523,0.925226 -1.256904,1.609199 -1.339214,2.761699 -0.116185,1.626786 1.152044,3.630017 2.693574,4.254642 0.86597,0.350888 1.05772,0.576346 1.03362,1.215369 -0.0194,0.515821 -0.14893,0.674323 -2.62262,3.210352 l -2.60217,2.667742 2.40721,2.473605 2.40721,2.473605 1.25129,-1.155863 c 1.07706,-0.99491 1.376,-1.189163 2.14687,-1.395018 1.18129,-0.315455 2.81013,-0.20773 3.74579,0.24773 1.65312,0.804709 2.9695,2.76326 3.04789,4.534759 0.0576,1.301824 -0.47837,2.480482 -1.77658,3.906869 l -1.08484,1.191948 2.47324,2.406839 2.47323,2.406846 2.77972,-2.714401 2.77972,-2.714399 -0.34126,-0.208921 c -0.1877,-0.114907 -0.64442,-0.342142 -1.01493,-0.50497 -0.89792,-0.394604 -2.18462,-1.687334 -2.66812,-2.680705 -0.89832,-1.845423 -0.28759,-4.394475 1.38847,-5.795142 2.00284,-1.67376 4.52037,-1.599022 6.54484,0.194298 0.82263,0.72869 1.03919,1.021895 1.41247,1.912239 0.24248,0.578372 0.49972,1.051202 0.57164,1.050733 0.0719,-4.59e-4 1.33901,-1.209085 2.81575,-2.685822 2.03578,-2.03578 2.66209,-2.735364 2.59033,-2.893373 z M 111.73582,45.74612 c -3.19928,-3.199277 -3.15334,-3.084197 -1.55107,-3.885497 2.30337,-1.151923 3.21256,-4.030909 1.97391,-6.250454 -0.91916,-1.647048 -3.21851,-2.888504 -4.76651,-2.573518 -1.60974,0.327549 -3.21976,1.641175 -3.65416,2.981462 -0.13891,0.42859 -0.27588,0.596414 -0.55777,0.683426 -0.35645,0.110023 -0.50192,-0.01294 -3.16033,-2.671349 l -2.786683,-2.786681 -0.433209,0.196779 c -0.238264,0.108227 -1.555669,1.319239 -2.927566,2.691136 -2.949821,2.949821 -2.951237,2.950509 -3.590324,1.57901 -0.48551,-1.041961 -1.629506,-2.192754 -2.535052,-2.550113 -0.882715,-0.348352 -2.368214,-0.394805 -3.296513,-0.103083 -1.040324,0.326926 -2.620451,1.872559 -2.976186,2.911217 -0.512807,1.497268 -0.215755,3.201977 0.789649,4.531618 0.351804,0.465267 0.778972,0.784205 1.629508,1.216806 l 1.15272,0.586255 -0.0563,0.50476 c -0.05072,0.454753 -0.30801,0.75647 -2.596926,3.045386 -1.812309,1.812309 -2.541171,2.624567 -2.542528,2.833443 -0.0014,0.210543 0.770992,1.065711 2.748832,3.043551 3.137509,3.13751 3.082358,3.015777 1.6864,3.722385 -1.555371,0.787301 -2.832495,2.70366 -2.79052,4.187261 0.05116,1.808347 1.662576,3.889169 3.433845,4.434125 2.215559,0.681649 4.388626,-0.258529 5.505998,-2.382171 0.764118,-1.452256 0.608137,-1.517749 3.664629,1.538743 l 2.670531,2.670534 2.705443,-2.705443 c 2.185162,-2.185161 2.685812,-2.750057 2.603342,-2.937423 -0.0562,-0.12759 -0.4782,-0.420867 -0.93787,-0.651724 -2.163047,-1.086334 -3.283377,-3.881931 -2.503688,-6.247535 0.244391,-0.74149 0.470304,-1.068402 1.33784,-1.935938 0.926498,-0.926499 1.157628,-1.077145 2.056718,-1.340588 1.20952,-0.354397 2.04865,-0.313373 3.36203,0.164371 1.22045,0.443942 2.41354,1.551968 2.87933,2.674039 0.2527,0.608745 0.3642,0.743705 0.57554,0.696674 0.14416,-0.03209 1.36092,-1.176294 2.70391,-2.542695 1.34299,-1.366403 2.54788,-2.510056 2.67753,-2.541451 0.17983,-0.04355 -0.4117,-0.704516 -2.4945,-2.787318 z"
+              id="path887-6"
+            />
+          </g>
+        </svg>
+      </div>
+      <h1 id="work" class="centered-heading">Work</h1>
+      <div class="profile-work">
+        <div class="project-list">
+          <div class="project-list__item">
+            <img
+              src="img/project1-screenshot.JPG"
+              alt="Screenshot of the homepage of my Hyrule Compendium project"
+              width="280px"
+            />
+            <h2>Hyrule Compendium App</h2>
+            <p>
+              A Hyrule Compendium listing all interactive items found on the
+              Sheikah Slate in the videogame Legend of Zelda Breath of the Wild.
+            </p>
+            <a href="https://github.com/amelieberry/hyrule-compendium-app"
+              >Github Repo</a
+            >
+            <a href="https://amelieberry.github.io/hyrule-compendium-app/"
+              >Live App</a
+            >
+          </div>
+          <div class="project-list__item">
+            <img
+              src="img/project-2-screenshot.JPG"
+              alt="Screenshot of the homepage of my movie-api project"
+              width="280px"
+            />
+            <h2>Movie API</h2>
+            <p>
+              The complete server-side of the Track'M application, including the
+              server, business logic, and business layers of the application. It
+              consists of a well-designed REST API and architected database
+              built using JavaScript, Node.js, Express, and MongoDB.
+            </p>
+            <a href="https://github.com/amelieberry/movie-api">Github Repo</a>
+            <a href="https://trackm.onrender.com/">Live API</a>
+          </div>
+          <div class="project-list__item">
+            <img
+              src="img/project-3-screenshot.JPG"
+              alt="Screenshot of the homepage of my Track'M project"
+              width="280px"
+            />
+            <h2>Track'M App</h2>
+            <p>
+              The client-side of a movie tracking app allowing users to create
+              an account, access information about different movies and save
+              them to their list of favorites. Users can also update their
+              personal information, and delete their account.
+            </p>
+            <a href="https://github.com/amelieberry/trackm-client"
+              >Github Repo</a
+            >
+            <a href="https://trackm-client.netlify.app/">Live App</a>
+          </div>
+          <div class="project-list__item">
+            <img
+              src="img/project-4-screenshot.JPG"
+              alt="Screenshot of the homepage of my Track'M project"
+              width="280px"
+            />
+            <h2>Meet App</h2>
+            <p>
+              A serverless and progressive React application using test-driven
+              development (TDD) technique. The application uses the Google
+              Calendar API to fetch upcoming events.
+            </p>
+            <a href="https://github.com/amelieberry/meet">Github Repo</a>
+            <a href="https://amelieberry.github.io/meet/">Live App</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/amelieberry" target="_blank"
+          ><img
+            src="img/social_github_icon.svg"
+            width="40"
+            height="40"
+            alt="Github"
+        /></a>
+        <a href="https://codepen.io/amelieberry" target="_blank"
+          ><img src="img/codepen_icon.svg" width="40" height="40" alt="CodePen"
+        /></a>
+        <a href="https://www.linkedin.com/in/amelie-berry" target="_blank"
+          ><img
+            src="img/linkedin_icon.svg"
+            width="40"
+            height="40"
+            alt="LinkedIn"
+        /></a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
