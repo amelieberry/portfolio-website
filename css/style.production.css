@@ -247,7 +247,6 @@ a:active {
 
 .profile-work {
   height: 100%;
-  max-width: 700px;
   margin: 20px auto;
 }
 
@@ -256,25 +255,29 @@ a:active {
   width: 33%;
 }
 
-@supports (display: flex) {
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding-top: 20px;
-    justify-content: center;
-  }
+.project-list {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+}
 
-  .project-list__item {
-    padding: 10px;
-    background-color: #fafafa;
-    max-width: 300px;
-    width: auto;
-    min-height: auto;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+.project-list__item {
+  margin: 10px;
+  background-color: #fafafa;
+  width: 300px;
+  min-height: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .contact-form {
