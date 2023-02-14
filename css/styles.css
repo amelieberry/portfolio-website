@@ -19,6 +19,10 @@ Colors used
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   color: var(--primary-text-color);
   font-family: 'Lato', sans-serif;
@@ -31,7 +35,7 @@ body {
 }
 
 main {
-  height: 90%;
+  height: 75%;
   width: 100vw;
   max-width: 100%;
   text-align: center;
@@ -126,10 +130,10 @@ a:active {
 .profile {
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
   max-height: 700px;
-  background: linear-gradient(to right bottom, var(--background-color) 50%, var(--background-color-light) 50.5%);
+  background: linear-gradient(to right bottom, var(--background-color) 50%, var(--background-color-light) 50.1%);
 }
 
 .centered-heading {
@@ -137,23 +141,23 @@ a:active {
 }
 
 #about {
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
   background-color: var(--background-color-light);
-  box-shadow: 0 0 5px 10px var(--background-color-light);
-  padding: 5px;
+  padding: 10px 20px;
+  border-radius: 1px;
 }
 
 #svg8,
 #svg1966,
 #svg9,
 #svgcontact1 {
-  /* margin: 0 auto; */
-  max-width: 100%;
-  height: auto;
+  max-width: fit-content;
+  display: flex;
+  flex: 1 1 auto;
 }
 
 #svg1966,
@@ -163,10 +167,10 @@ a:active {
 }
 
 .profile__info {
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 13px;
 }
 
@@ -182,8 +186,8 @@ a:active {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  gap: 8px;
-  margin-bottom: 40px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .about-section {
@@ -196,9 +200,13 @@ a:active {
 }
 
 .about-section__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  margin: 0 12px;
+  line-height: 1.7rem;
+}
+
+.about-section__mission {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .about-list {
@@ -331,11 +339,23 @@ a:active {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 6.5rem;
+  justify-content: center;
+  height: 15%;
   position: relative;
   bottom: 0;
   padding-bottom: 6px;
   width: 100%;
+}
+
+.page-footer p {
+  margin-top: 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
 }
 
 @media all and (max-width: 550px) {
@@ -365,7 +385,6 @@ a:active {
 
   .profile__info {
     max-width: 250px;
-    text-align: right;
   }
 
   .contact-details {
@@ -419,19 +438,9 @@ a:active {
     max-width: 500px;
   }
 
-  .profile__info {
-    padding-bottom: 30px;
-    padding-right: 0;
-  }
-
   .profile {
     flex-direction: column;
-  }
-}
-
-@media all and (min-width: 750px) {
-  .profile {
-    flex-direction: row;
+    align-items: center;
   }
 }
 
