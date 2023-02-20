@@ -148,6 +148,10 @@ a:active {
   width: 300px;
 }
 
+.strike-through {
+  text-decoration: line-through;
+}
+
 #svg8,
 #svg1966,
 #svg9,
@@ -282,7 +286,7 @@ a:active {
   margin: 10px;
   background-color: #fafafa;
   width: 300px;
-  min-height: auto;
+  height: auto;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -292,6 +296,19 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  height: 315px;
+}
+
+.project-content a {
+  color: #be3455;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -418,7 +435,7 @@ a:active {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .profile-work {
