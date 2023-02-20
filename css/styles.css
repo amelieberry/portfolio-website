@@ -151,10 +151,13 @@ a:active {
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  background-color: var(--background-color-light);
   padding: 10px 20px;
   border-radius: 1px;
-  width: 300px;
+  text-shadow:
+    -1px 1px 0 var(--background-color-light),
+    1px 1px 0 var(--background-color-light),
+    1px -1px 0 var(--background-color-light),
+    -1px -1px 0 var(--background-color-light);
 }
 
 .strike-through {
@@ -184,10 +187,10 @@ a:active {
   gap: 13px;
 }
 
-/* .profile__info p {
-  background-color: var(--background-color-light);
-  border-radius: 5px;
-} */
+.profile__info p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
 
 .about-section,
 .skills-section {
