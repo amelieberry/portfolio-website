@@ -8,7 +8,7 @@ html {
 
 body {
   color: #1c190f;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
   line-height: 1.3;
@@ -208,9 +208,114 @@ a:active {
   line-height: 1.7rem;
 }
 
-.about-section__mission {
+#about-section__skills {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+/* Beginning of skill tree css */
+#tree ul {
+  /* display: block; */
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-section__skills {
+  width: 100%;
+}
+
+#tree {
+  max-width: 400px;
+  min-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  height: 500px;
+  box-shadow: 0 4px 2px -2px #201e3d;
+  color: white;
+  margin-top: 20px;
+}
+
+#top-container {
+  background-color: rgb(32, 30, 61);
+  border-radius: 50%;
+}
+
+#tree-top {
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.large-circle .medium-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.large-circle {
+  width: 160px;
+  height: 170px;
+  background-color: #be3455;
+  border-radius: 50%;
+}
+
+.medium-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.saturated-color {
+  background-color: #be2147;
+}
+
+.desaturated-color {
+  background-color: #be4763;
+}
+
+.container-medium-circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left {
+  margin-top: 10px;
+}
+
+#right {
+  margin-right: 10px;
+}
+
+.base-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 275px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trunk {
+  height: 270px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 6px 5px #616161;
+}
+
+.trunk-right {
+  transform: scaleX(-1);
 }
 
 .about-list {
