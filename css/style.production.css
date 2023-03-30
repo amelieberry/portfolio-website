@@ -1,3 +1,7 @@
+/*
+Colors used
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -209,7 +213,7 @@ a:active {
 }
 
 #about-section__skills {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -345,7 +349,7 @@ a:active {
   text-decoration: none;
   height: 40px;
   width: 160px;
-  padding: 3px;
+  padding: auto;
   box-shadow: 3px 3px 4px #0e1340;
 }
 
@@ -369,6 +373,11 @@ a:active {
   transform: translate(2px, 2px);
   box-shadow: none;
   transition: 0.2s;
+}
+
+.button-inner a {
+  line-height: 40px;
+  color: #fff;
 }
 
 .profile-work {
